@@ -22,7 +22,7 @@ const Home = () => {
 
         {/* Display the image */}
         <div className='w-full md:w-9/12 mt-8 md:mt-0 h-96 relative'>
-          <img src="/Images/hero-img5.jpg" alt="hero-img" className='w-full h-full'/>
+          <img src="/Images/her-img-2.jpg" alt="hero-img" className='w-full h-full'/>
           <div className='absolute top-16 left-8'>
             <p className='text-gray-600 mb-4'>Code With Juliet</p>
             <h2 className='text-3xl font-bold'>WELCOME TO E_SHOP</h2>

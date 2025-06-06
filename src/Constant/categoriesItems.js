@@ -1,14 +1,14 @@
 export const categoriesItems =[
     {
         title: "Men",
-        image: "/Images/Men.webp",
+        image: "/Images/men-1.jpg",
     },
     {
         title: "Women",
-        image: "/Images/Women.avif",
+        image: "/Images/woman-1.jpg",
     },
     {
         title: "Kids",
-        image: "/Images/kids.jpg",
+        image: "/Images/child.jpg",
     },
 ]
