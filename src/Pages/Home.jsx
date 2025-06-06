@@ -7,6 +7,7 @@ import { setProducts } from '../redux/ProductSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { topProductItems } from '../Constant/topProductItems';
 import ProductCard from '../Components/ProductCard';
+import Shop from './Shop';
 
 const Home = () => {
 
@@ -18,6 +19,7 @@ useEffect(() => {
 
 
   return (
+    <div>
     <div className="bg-white mt-2 md:px-16 lg:px-24 py-4">
       <div className="container mx-auto py-4 flex flex-col md:flex-row space-x-4">
         <div className="w-full md:w-3/12">
@@ -38,12 +40,12 @@ useEffect(() => {
         {/* Display the image */}
         <div className="w-full md:w-9/12 mt-8 md:mt-0 h-96 relative">
           <img
-            src="/Images/her-img-2.jpg"
+            src="/Images/hero-imG.jpg"
             alt="hero-img"
             className="w-full h-full"
           />
           <div className="absolute top-16 left-8">
-            <p className="text-gray-600 mb-4">Code With Juliet</p>
+            <p className="text-gray-600 mb-4">Shop With Juliet</p>
             <h2 className="text-3xl font-bold">WELCOME TO E_SHOP</h2>
             <p className="text-xl mt-2.5 font-bold text-gray-800">
               MILLIONS+ PRODUCTS
@@ -57,14 +59,16 @@ useEffect(() => {
       <InfoSection />
       <CategoriesSection />
 
-      <div>
-        <h2>Top Products</h2>
-        <div>
+      <div className='container mx-auto py-12'>
+        <h2 className='text-2xl font-bold mb-6 text-center'>Top Products</h2>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 cursor-pointer'>
           {products.products.slice(0, 5).map((product) => (
             <ProductCard product={product}/>
           ))}
         </div>
       </div>
+    </div>
+     <Shop/>
     </div>
   );
 }
