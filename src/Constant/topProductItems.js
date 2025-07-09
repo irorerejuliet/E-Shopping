@@ -31,7 +31,7 @@ export const topProductItems = [
   },
   { 
     id: 6,
-    image: "/Images/product-6.jpg",
+    image: "/Images/product-6.jpeg",
     name: "Product 6",
     price: "29.00",
   },

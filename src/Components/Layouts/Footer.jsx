@@ -54,10 +54,29 @@ const Footer = () => {
               <FaLinkedin />
             </a>
           </div>
-          <form className='flex items-center justify-center mt-8'>
-            <input type="email" placeholder='Enter Email' className='w-full p-2 rounded-l-lg bg-gray-800 border border-gray-600'/>
-            <button className='bg-red-600 text-white px-4 py-2 rounded-r-lg border '>Subscribe</button>
+          <form className="flex items-center justify-center mt-8">
+            <input
+              type="email"
+              placeholder="Enter Email"
+              className="w-full p-2 rounded-l-lg bg-gray-800 border border-gray-600"
+            />
+            <button className="bg-red-600 text-white px-4 py-2 rounded-r-lg border ">
+              Subscribe
+            </button>
           </form>
+        </div>
+      </div>
+      <div className="mt-8 border-t border-gray-700 pt-4">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+          <p>&copy; 2025 e-Shop All rights Reserved</p>
+          <div className="flex space-x-4 mt-4 md:mt-0">
+            <a href="" className="hover:underline">
+              Privacy Policy
+            </a>
+            <a href="" className="hover:underline">
+              Terms & Condition
+            </a>
+          </div>
         </div>
       </div>
     </footer>
